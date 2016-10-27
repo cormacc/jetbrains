@@ -1,38 +1,38 @@
-# Jetbrains
+# Jetbrains Toolbox Application Launcher
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jetbrains`. To experiment with that code, run `bin/console` for an interactive prompt.
+Find and launch Jetbrains IDEs installed using the toolbox from the command line.
 
-TODO: Delete this and the text above, and describe your gem
+Searches default (Linux) Jetbrains Toolbox installation path for latest installation of a given Jetbrains IDE. e.g. 'jetbrains clion' or 'jetbrains idea'.
+
+Minimally tested on my own installation, i.e.
+
+* Arch Linux
+* Toolbox version 1.0.2002
+* Current and EAP releases of IDEA and CLion installed
+
+
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'jetbrains'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
+    
     $ gem install jetbrains
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ jetbrains <app-name>
 
-## Development
+where the app-name is the prefix of the *.sh launcher included in the app's bin folder.
+These are `idea.sh` and `clion.sh` for the two I use. i.e.
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+    $ jetbrains idea
+    
+or
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+    $ jetbrains clion 
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jetbrains.
+Bug reports and pull requests are welcome on GitHub at https://github.com/cormacc/jetbrains
 
 
 ## License
