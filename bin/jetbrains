@@ -1,0 +1,9 @@
+#!/usr/bin/ruby
+require 'jetbrains'
+
+if ARGV.length == 1
+  Jetbrains::Launcher.new(ARGV[0])
+else
+  puts "Usage: 'jetbrains <appname>', where <appname> is one of 'clion','idea','rubymine' etc..."
+  puts "e.g. 'jetbrains clion' to find/launch latest toolbox installation of the CLion IDE"  
+end
