@@ -17,7 +17,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = 'bin'
+  #'bin' used for dev-centric binstubs we don't want to add to path
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^#{spec.bindir}/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
